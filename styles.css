@@ -52,7 +52,7 @@ li a{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: url(cover.jpeg);
+    background: url("cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
