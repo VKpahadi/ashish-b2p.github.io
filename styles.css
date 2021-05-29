@@ -1,58 +1,54 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.main-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    list-style-type: none;
-    font-size: 20px;
-    margin: 0;
-    
-    
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0;
 }
 
-.navbar-h{
-    background-color: rgba(27, 26, 26, 0.1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    
-    
+.navbar-h {
+  background-color: rgba(27, 26, 26);
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
 }
-li{
-    padding: 20px;
+li {
+  padding: 20px;
 }
 
-.push-left{
-    margin-left: auto;
+.push-left {
+  margin-left: auto;
 }
 
-li a{
-    text-decoration: none;
-    color: rgb(14, 13, 13);
-    
-
+li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  /* color: rgb(14, 13, 13); */
 }
-.cover{
-    
+.cover {
+  display: flex;
 
-    display: flex;
-    align-items: flex-start;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: url("https://ashish-b2p.github.io/cover.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    font-size: 30px;
-    font-weight: 200;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: cornflowerblue;
+  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url("ashish-b2p.github.io/mobilecover.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Quattrocento", serif;
+  color: antiquewhite;
+  /* color: rgb(25, 21, 37); */
 }
 
 /* .horizontal-nav{
@@ -63,104 +59,110 @@ li a{
     height: 300px;
     background-color: aqua;
 } */
-.headings{
-    
-    padding: 10px auto;
+.headings {
+  padding: 10px auto;
 }
 
-
-li a:hover{
-    
-    color: rgb(240, 227, 174);
-    
+li a:hover {
+  color: rgb(240, 227, 174);
 }
 
-/* Dropdown Button */
+/* Dropdown Link */
 .droplink {
-    text-decoration: none;
-    color: rgb(14, 13, 13);
-    padding: 16px;
-    font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  /* color: rgb(14, 13, 13); */
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(27, 26, 26, 0.5);
+  margin-top: 15px;
+  min-width: 450px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(27, 26, 26, 0.5);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+.droplink:hover {
+  color: rgb(240, 227, 174);
+}
+
+@media only screen and (max-width: 500px) {
+  .main-nav {
+    font-size: 0.7em;
+    padding: 0;
+  }
+  .main-nav > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .droplink {
+    font-size: 2.5em;
     border: none;
   }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(27, 26, 26, 0.0);
-    margin-top: 16px;
-    min-width: 450px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover{background-color: rgba(27, 26, 26, 0.5);}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
-  .droplink:hover{
-      color: rgb(240, 227, 174);
-  }
-
-
-
-
-@media only screen and (max-width:500px){
-    .main-nav{
-        font-size: 0.7em;
-        padding: 0;
-    }
-    .main-nav > img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
-    .droplink {
-        
-        font-size: 0.7em;
-        border: none;
-      }
-} 
-
-
-
-.grid-wrapper{
-    
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(350px,2fr));
-    
-}
-.box{
-    background-color: black;
-    margin: 20px;
-    height: 300px;
-    /* padding: 10px auto; */
-
-}
-.contact-links{
-    
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
+
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 248, 241);
+}
+.card-container div {
+  margin: 10px;
+  
+}
+
+.card img {
+  justify-content: center;
+}
+
+.card{
+    transition: all 1s;
+    background-color: rgb(234, 240, 250);
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
