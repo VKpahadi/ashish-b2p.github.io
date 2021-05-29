@@ -132,7 +132,8 @@ li a:hover {
     border: none;
   }
   li{
-    padding:5px;
+    padding: 5px;
+    font-size: 0.7em;
 }
 
 
