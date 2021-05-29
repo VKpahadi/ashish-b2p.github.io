@@ -110,7 +110,7 @@ li a:hover{
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover,p:hover{background-color: rgba(27, 26, 26, 0.5);}
+  .dropdown-content a:hover{background-color: rgba(27, 26, 26, 0.5);}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
