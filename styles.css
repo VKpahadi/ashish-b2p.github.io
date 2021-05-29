@@ -1,18 +1,20 @@
 body {
   margin: 0;
+  
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  
   list-style-type: none;
   font-size: 20px;
   margin: 0;
 }
 
 .navbar-h {
-  background-color: rgba(27, 26, 26);
+  background-color: rgba(27, 26, 26,0.9);
   /* position: fixed; */
   top: 0;
   width: 100%;
@@ -33,7 +35,7 @@ li a {
 }
 .cover {
   display: flex;
-
+  margin-top: 0px;
   align-items: flex-start;
   align-items: center;
   flex-direction: column;
@@ -117,26 +119,36 @@ li a:hover {
   color: rgb(240, 227, 174);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+  
   .main-nav {
     font-size: 0.7em;
     padding: 0;
   }
   .main-nav > img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    padding: 0;
   }
   .droplink {
     font-size: 2.5em;
     border: none;
+    padding: 0;
   }
   li{
-    padding: 4px;
+    padding: 5px;
     font-size: 0.7em;
+  }
 }
 
 
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card-container {
   display: flex;
