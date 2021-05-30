@@ -1,4 +1,4 @@
-let lines = ["I", "am", "Ashish", "Welcome", "To", "My", "PortFolio"];
+let lines = ["I", "am", "Ashish", "welcome", "to", "my", "Portfolio"];
 let count = 0;
 
 setInterval(changeTagline, 700);
